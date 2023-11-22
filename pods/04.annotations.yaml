@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: annotations
+  annotations:
+    com.project.author: sivakumar
+    com.project.name: roboshop 
