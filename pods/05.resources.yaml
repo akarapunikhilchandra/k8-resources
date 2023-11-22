@@ -4,8 +4,9 @@ metadata:
   name: resources
 spec: 
   containers:
-  - nginx: nginx
+  - name: nginx
     image: nginx 
+    imagePullPolicy: Always
     resources: 
       requests: 
         cpu: "100m" 
@@ -13,4 +14,3 @@ spec:
       limits: 
         cpu: "200m"
         memory: "256Mi"
-         
