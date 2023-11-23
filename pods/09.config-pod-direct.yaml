@@ -7,5 +7,5 @@ spec:
   - name: config-pod-direct 
     image: nginx 
     envFrom: 
-    - configMapKeyRef:  
+    - configMapRef:  
       name: course-config 
