@@ -11,18 +11,18 @@ spec:
     volumeID: vol-0d8cb23fe1aa418be
   capacity:
     storage: 20Gi
-# ---
-# apiVersion: v1
-# kind: PersistentVolumeClaim
-# metadata:
-#   name: ebs-static-pvc
-# spec:
-#   storageClassName: ""
-#   accessModes:
-#     - ReadWriteOnce
-#   resources:
-#     requests:
-#       storage: 3Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: ebs-static-pvc
+spec:
+  storageClassName: ""
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 3Gi
 # ---
 # apiVersion: apps/v1
 # kind: Deployment
